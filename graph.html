@@ -51,6 +51,7 @@ d3.json("sample.json", function(error, graph) {
         }
       }
 
+      // Push new node to array
       if (sidx == -1) {
         sidx = nodes.length;
         nodes.push({ name: line.src });
@@ -64,6 +65,7 @@ d3.json("sample.json", function(error, graph) {
         }
       }
 
+      // Push new node to array
       if (tidx == -1) {
         tidx = nodes.length;
         nodes.push({ name: line.dest });
